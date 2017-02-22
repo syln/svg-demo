@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style media="screen">
+    .rect{
+      width: 300px;
+      height: 150px;
+      fill:rgb(0,0,0);
+      stroke-width:5;
+      stroke:rgb(0, 135, 232);
+      fill-opacity:0.6;
+      stroke-opacity:0.1;
+      rx:20;
+      ry:20;
+    }
+    .circle{
+      cx:100;
+      cy:50;
+      r:40;
+      stroke-width:1;
+      fill:rgb(74, 74, 74);
+    }
+    .ellipse{
+      cx:100;
+      cy:80;
+      rx:80;
+      ry:50;
+      stroke-width:1;
+      fill:rgb(74, 74, 74);
+    }
+    .line{
+      stroke-width:2;
+      stroke:rgb(74, 74, 74);
+    }
+    .polygon{
+      fill:rgb(17, 151, 209);
+      stroke-width:1;
+    }
+    .polyline{
+      fill:none;
+      stroke:#666666;
+      stroke-width:2;
+    }
+  </style>
+</head>
+<body>
+  <h3>矩形</h3>
+  <svg>
+    <rect class="rect"/>
+  </svg>
+  <h3>圆形</h3>
+  <svg>
+    <circle class="circle"／>
+  </svg>
+  <h3>椭圆</h3>
+  <svg>
+    <ellipse class="ellipse"／>
+  </svg>
+  <h3>直线</h3>
+  <svg>
+    <line x1="0" y1="0" x2="100" y2="100" class="line"/>
+  </svg>
+  <h3>多边形</h3>
+  <svg>
+    <polygon points="100,10 60,100 200,130" class="polygon"/>
+  </svg>
+  <h3>曲线</h3>
+  <svg>
+    <polyline class="polyline" points="20,10 40,15 35,25 40,60"/>
+  </svg>
+</body>
+</html>
